@@ -2,7 +2,151 @@
     font-family: Source Sans;
     src: url(..//css_advanced/fonts/SourceSansPro-Regular.otf);
 }
-
+@font-face {
+    font-family: bold;
+    src: url(./fonts/SourceSansPro-Bold.otf);
+}
+@font-face {
+    font-family: light;
+    src: url(./fonts/SourceSansPro-Light.otf);
+}
+@font-face {
+    font-family: italic;
+    src: url(./fonts/SourceSansPro-ExtraLight.otf);
+}
 body {
+    margin: 0px;
     font-family: Source Sans;
 }
+
+/* header styling */
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: c;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 20%;
+    margin: 0 auto;
+}
+
+nav ul > li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-image {
+    background-image: url(./images/Object.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure it covers the entire container */
+    background-position: center center;
+    margin: 0px;
+}
+
+/* Ensure font size changes don't affect the background image */
+.header-section > div h1 {
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 800;
+    font-family: bold;
+    max-height: 11;
+}   
+.SGL {
+    display: flex;
+    flex-direction: column;
+    justify-content: s;
+    align-items: center;
+    position: relative;
+    bottom: 70px;
+    gap: 20px;
+}
+.spans {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    color: white;
+}
+.button button {  
+height: 50px;
+width: 180px;
+outline: none;
+border: none;
+border-radius: 50px;
+color: white;
+background-color: #c282f3;
+}
+/* round images styling */
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+.rounded-images > h2  {
+    font-family: light;
+    color: white;
+    text-align: center;
+}
+.image3 img {
+    border-radius: 100px;
+}
+.images > div h3 {
+    font-family: bold;
+    font-style: normal;
+}
+.images > div {
+    font-family: italic;
+    line-height: 0.8;
+    text-align: center;
+    font-style: italic;
+   
+}
+.quote {
+    display: flex;
+    color: white;
+    align-content: center;
+    background-color: #c282f3;
+}
+
+.quote {
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+blockquote {
+    width: 70%;
+}
+ .quote > div q, p{
+    padding-left: 40px;
+}
+.quote > div q {
+    font-family: bold;
+}
+.quote > div p {
+    font-style: italic;
+    font-family: italic;
+    line-height: 0.5;
+}
+.popular  {
+    text-align: center;
+    padding-top: 30px;
+
+}
+.pop {
+    color: #c282f3;
+    font-family: bold;
+}
+.videos {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+ 

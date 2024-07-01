@@ -110,6 +110,7 @@ background-color: rgba(194, 113, 255, 1);
     font-style: italic;
    
 }
+/* quote section */
 .quote {
     display: flex;
     color: white;
@@ -151,6 +152,7 @@ blockquote {
     padding-top: 50px;
     gap: 28px;
     flex-wrap: wrap;
+    /* padding-left: 100px; */
 }
 
 /* videos section */
@@ -219,7 +221,7 @@ blockquote {
     font-weight: 100;
 }
 .btn {
-    /* padding: 100px 25%; */
+    padding: 100px 25%;
     width: 200px;
     padding: 70px 44%;
 }

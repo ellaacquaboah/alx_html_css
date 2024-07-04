@@ -22,3 +22,35 @@ body {
     margin: 0px;
     font-family: Source Sans;
 }
+
+/* header-styll=ing */
+header {
+    display: flex;
+    justify-content: space-around;
+
+}
+ .logo img {
+    width: 200px;
+ }
+ 
+header nav ul  {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 150%;
+    justify-content: space-around;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: lowercase;
+
+}
+.hero-image {
+    background-image: url(./images/headphones_hero_1.jpg);
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}

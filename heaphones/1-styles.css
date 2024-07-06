@@ -21,10 +21,17 @@
 body {
     margin: 0px;
     font-family: Source Sans;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 /* header-styll=ing */
 header {
+    width: 100%;
     display: flex;
     justify-content: space-around;
 
@@ -53,4 +60,65 @@ header nav ul li a {
     background-repeat: no-repeat;
     background-position: center center;
 
+}
+/* styling what we do section */
+.what-we-do {
+    margin-top: 100px;
+}
+.what-we-do h2 {
+    width: 100%;
+    text-align: center;
+
+}
+.what-we-do p {
+    /* width: 100%; */
+    padding: 0 25%;
+    text-align: center;
+    margin: auto;
+}
+/* icons */
+.icons {
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+    gap: 30px;
+    text-align: center;
+    margin-top: 100px;
+
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+/* our results */
+.results h3 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 37.5px;
+}
+.results p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    padding: 0 25%;
+}
+/* results-background-image */
+.results-hero {
+    background-image: url(./images/headphones_hero_2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    color: white;
+}
+/* pentagons */ 
+.pentagons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+}
+.pentagons div {
+    width: 190px;
+    height: 190px;
+}
+.pentagons div img {
+    width: 100%;
+    height: 100%;
 }

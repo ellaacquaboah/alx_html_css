@@ -1,0 +1,262 @@
+@font-face {
+    font-family: Source Sans;
+    src: url(./fonts/SourceSansPro-Regular.otf);
+}
+@font-face {
+    font-family: bold;
+    src: url(./fonts/SourceSansPro-Bold.otf);
+}
+@font-face {
+    font-family: light;
+    src: url(./fonts/SourceSansPro-Light.otf);
+}
+@font-face {
+    font-family: italic;
+    src: url(./fonts/SourceSansPro-ExtraLight.otf);
+}
+@font-face {
+    font-family: semi;
+    src: url(./fonts/SourceSansPro-Semibold.otf);
+}
+
+body {
+    margin: 0px;
+    font-family: Source Sans;
+}
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.hero-image {
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* header-styling */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 0;
+
+}
+
+/* nav kinks styling */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+    gap: 20px;
+    text-transform: lowercase;
+    font-size: 19;
+}
+
+.logo img {
+    width: 200px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* contact us */
+.form h4 {
+    text-align: center;
+    color: #071629;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 8%;
+}
+.form {
+    display: flex;
+    padding: 0 25%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6% 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 38px;
+    justify-content: center;
+    margin-left: 20%;
+}
+form div input, textarea {
+    width: 70%;
+    height: 29px;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px  #979797;
+    border-radius: 4px;
+}
+form div label {
+    display: block;
+    color: #071629;
+    font-weight: 700;
+}
+.form  .button {
+    margin: auto;
+    padding-top: 10%;
+    position: relative;
+    left: -6px;
+    top: -11px;
+    height: 43px;
+    transition: none 0s ease 0s;
+    cursor: move;
+}
+
+.button button {
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    outline: none;
+    border: none;
+    background-color: #FF6565;
+    color: white;
+    font-weight: 700;
+}
+/* footer */
+footer {
+    height: 249px;
+    background-color: rgba(7, 22, 41, 1);
+    color: white;
+    margin-top: 60px;
+}
+footer .content {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+footer p {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+footer .icons {
+    width: 12%;
+    display: flex;
+    justify-content: space-around;
+}
+.content .img img {
+    width: 161px;
+}
+
+
+
+
+
+
+
+
+/* mdeia queries */
+/* destop */
+@media  screen and (min-width: 1280px) {
+
+}
+
+
+
+/* tablet */
+@media (max-width: 700px) and (min-width: 1000px){
+ 
+}
+
+
+
+
+/* smart phone */
+@media screen and (max-width: 420px) {
+.icons {
+    grid-template-columns: 1fr;
+  }
+}
+/* styling what we do section */
+.what-we-do {
+    margin-top: 100px;
+}
+.what-we-do h2 {
+    width: 100%;
+    text-align: center;
+
+}
+.what-we-do p {
+    /* width: 100%; */
+    padding: 0 25%;
+    text-align: center;
+    margin: auto;
+}
+/* icons */
+.icons {
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+    gap: 30px;
+    text-align: center;
+    margin-top: 100px;
+
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+/* our results */
+.results h3 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 37.5px;
+}
+.results p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    padding: 0 25%;
+}
+/* results-background-image */
+.results-hero {
+    background-image: url(./images/headphones_hero_2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    color: white;
+}
+/* pentagons */ 
+.pentagons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+}
+.pentagons div {
+    width: 190px;
+    height: 190px;
+}
+.pentagons div img {
+    width: 100%;
+    height: 100%;
+}
+.iconss {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.results {
+    padding: 6%;
+}
+
+.pentagons {
+    padding-top: 5%;
+
+}
+.pentagons div img::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+  
+}

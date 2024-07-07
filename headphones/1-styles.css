@@ -28,7 +28,9 @@ body {
 *::after {
     box-sizing: border-box;
 }
+
 .hero-image {
+    width: 100%;
     background-image: url(./images/headphones_hero_1.jpg);
     background-size: cover;
     background-position: center;
@@ -61,7 +63,14 @@ nav ul {
 nav ul li a {
     color: white;
     text-decoration: none;
+    transition: 0.5s;
 }
+/* hovering on links effect */
+nav ul li a:hover {
+    color: #FF6565;
+    transition: 0.5s;
+}
+
 
 /* contact us */
 .form h4 {
@@ -120,6 +129,7 @@ form div label {
     background-color: #FF6565;
     color: white;
     font-weight: 700;
+    cursor: pointer;
 }
 /* footer */
 footer {
@@ -157,7 +167,7 @@ footer .icons {
 
 /* mdeia queries */
 /* destop */
-@media  screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
 
 }
 
@@ -172,11 +182,47 @@ footer .icons {
 
 
 /* smart phone */
-@media screen and (max-width: 420px) {
-.icons {
-    grid-template-columns: 1fr;
-  }
+@media screen and (max-width: 500px) {
+header, ul  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+.paragraph p {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.what-we-do p { 
+padding: 0;
+
+}
+
+.icons {
+    
+display: grid; 
+grid-template-rows: 1fr;
+display: flex;
+flex-direction: column;
+}
+.icon-1 p {  
+padding: 0 25%;
+}
+
+.pentagons {
+   
+display: flex;
+flex-direction: column;
+}
+
+}
+
+
+
+
+
+
 /* styling what we do section */
 .what-we-do {
     margin-top: 100px;
@@ -187,7 +233,7 @@ footer .icons {
 
 }
 .what-we-do p {
-    /* width: 100%; */
+    width: 100%;
     padding: 0 25%;
     text-align: center;
     margin: auto;
@@ -260,3 +306,21 @@ footer .icons {
     position: absolute;
   
 }
+.lorem {
+    text-align: center;
+    color: white;
+    padding: 5%;
+}
+.lorem > div:nth-child(1) h1 {
+    font-size: 32px;
+    line-height: 22.11px;
+}
+.paragraph p {
+    
+padding: 5% 25%;
+    
+margin: 0;
+}
+
+/* animations */
+
